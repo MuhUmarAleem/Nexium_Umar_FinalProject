@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './globals.css';
 import type { Metadata } from 'next';
 
@@ -16,11 +17,11 @@ export default function RootLayout({
       <body>
         <header>
           <nav>
-            <a href="/" className="logo">Resume Tailor</a>
+            <Link href="/" className="logo">Resume Tailor</Link>
             <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/register">Register</a>
-              <a href="/login">Login</a>
+              <Link href="/">Home</Link>
+              <Link href="/register">Register</Link>
+              <Link href="/login">Login</Link>
             </div>
           </nav>
         </header>
